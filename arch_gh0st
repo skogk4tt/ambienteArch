@@ -1052,13 +1052,7 @@ clear
 
 #----------------------------------------
 #                Bye
-#----------------------------------------
-
-	curl -s https://raw.githubusercontent.com/gh0stzk/Arch-Install/main/zfetch > zfetch
-	mv zfetch /mnt/usr/bin/
-	chmod +x /mnt/usr/bin/zfetch
-	$CHROOT /usr/bin/zfetch
-		
+#----------------------------------------	
 		echo
 		echo
 		

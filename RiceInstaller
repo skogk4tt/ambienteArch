@@ -98,9 +98,9 @@ clear
 
 logo "Downloading dotfiles"
 [ -d ~/dotfiles ] && rm -rf ~/dotfiles
-printf "Cloning rice from https://github.com/skogk4tt/dotfiles\n"
+printf "Cloning rice from https://github.com/gh0stzk/dotfiles\n"
 cd
-git clone --depth=1 https://github.com/skogk4tt/dotfiles.git
+git clone --depth=1 https://github.com/gh0stzk/dotfiles.git
 sleep 2
 clear
 

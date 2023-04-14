@@ -1,17 +1,15 @@
-# BSPWM | Polybar themes collection with Theme Selector
+# BSPWM | Polybar | Coleccion de temas
 
-## Puedes leer esta pagina en español [AQUI](INICIO.md)
-
-## 🌿 Information
-12 different themes for BSPWM and Polybar. With a theme selector to change on the fly.
+## 🌿 Informacion
+Mi coleccion de 12 temas para BSPWM y Polybar. Con menu para seleccionar los temas.
 
 ## :book: Wiki
-I already started writing the wiki, you should give it a read. [**Wiki**](https://github.com/gh0stzk/dotfiles/wiki) And you can suggest topics so that you can edit the themes and leave them as you want.
+Ya comencé a escribir la wiki, deberías darle una lectura. [**Wiki**](https://github.com/gh0stzk/dotfiles/wiki) Y puedes sugerir temas para que puedas editar los rices y dejarlos como tus gustos y corazon te dicten.
 
 https://user-images.githubusercontent.com/67278339/211363959-9182ecb7-e56e-4598-afed-f352c5d2979e.mp4
-
-## Info
-<img src="https://user-images.githubusercontent.com/67278339/221605474-21d65156-0cf7-485c-bd1a-40792c37817e.png" alt="Linux Fetch" align="right" width="450">
+ 
+## Información
+<img src="https://user-images.githubusercontent.com/67278339/221605474-21d65156-0cf7-485c-bd1a-40792c37817e.png" alt="Linux Fetch" align="right" width="600">
 
 |Distro|[Arch](https://archlinux.org/)|
 |:---:|:---:|
@@ -28,28 +26,28 @@ https://user-images.githubusercontent.com/67278339/211363959-9182ecb7-e56e-4598-
 
 <br>
 
-## 🚀 Features
+## 🚀 Caracteristicas
 <img src="https://user-images.githubusercontent.com/67278339/221426400-6029bdd7-f183-4860-9ade-a5fe35d2251a.png" alt="Rice Menu" align="right" width="400px">
 
-* **Change themes on the fly:** 12 different Rices now!.
+* **Cambia el tema al momento:** 12 diferentes temas!.
 
-* **Theme Selector:** <code>Alt + Space bar</code> to launch it.
+* **Menu de temas:** <code>Alt + Space bar</code> para abrir menu.
 
-* **Random wallpaper:**  Every time you switch between rices or reload bspwm with <code>super + alt + r</code> a new wallpaper is set depending on the rice you are on.
+* **Wallpapers al azar:**  Cada vez que cambias de tema o reinicias bspwm <code>super + alt + r</code> tendras un wallpaper diferente dependiendo el tema en el que estes.
 
-* **Wallpaper Changer** <code>Super + Alt + w</code> changes bethween different wallpapers in the actual rice.
+* **Super + Alt + w** Cambia entre los diferentes wallpapers que tiene el tema.
 
-* **Hide / Unhide Bar:** If you needit you can hide bars
+* **Mostrar / Ocultar barra:** Podras ocultar y volver a mostrar la barra ( Polybar y EWW )
 
-* **Change transparency on the fly:** 
-Increase and decrease transparency in focused or selected window.
+* **Cambia la transparencia:** 
+Aumenta o disminuye la transparencia de la ventana de trabajo en la que estes.
 
-**And more..**
+**Y mas..**
 
 <table align="center">
    <tr>
       <th align="center">
-         <sup><sub>:warning: WARNING :warning:</sub></sup>
+         <sup><sub>:warning: Cuidado!! :warning:</sub></sup>
       </th>
    </tr>
    <tr>
@@ -57,14 +55,14 @@ Increase and decrease transparency in focused or selected window.
       
       
       
-     THIS DOTFILES ARE CONFIGURED AT 1600x900 WITH 96 DPI! 1 MONITOR
-     SOME STUFF MIGHT BREAK ON LOWER OR HIGHER
-     RESOLUTIONS BUT WILL STILL WORK!
+     MIS CONFIGURACIONES LAS HICE CON UNA RESOLUCION 1600x900 CON 96 DPI! 1 MONITOR
+     ALGUNAS COSAS TAL VEZ SE ROMPAN CON RESOLUCIONES DIFERENTES
+     PERO IGUAL FUNCIONARA!
      
    </tr>
    </table>
 
-## 🎨 The themes
+## 🎨 Los Temas
 
 ### 🌸Emilia:
 
@@ -72,7 +70,7 @@ Increase and decrease transparency in focused or selected window.
 |---|---|
 
 <details>
-<summary><b>Extra wallpapers in Emilia</b></summary>
+<summary><b>Extra wallpapers en Emilia</b></summary>
 
 |<img src="config/bspwm/rices/emilia/walls/wall-02.webp" alt="Emilia Rice" align="center" width="150px">|<img src="config/bspwm/rices/emilia/walls/wall-03.webp" alt="Emilia Rice" align="center" width="150px">|<img src="config/bspwm/rices/emilia/walls/wall-04.webp" alt="Emilia Rice" align="center" width="150px">|
 |:-:|:-:|:-:|
@@ -86,7 +84,7 @@ Increase and decrease transparency in focused or selected window.
 |---|---|
 
 <details>
-<summary><b>Extra wallpapers in Jan</b></summary>
+<summary><b>Extra wallpapers en Jan</b></summary>
 
 |<img src="config/bspwm/rices/jan/walls/wall-01.webp" alt="Jan Rice" align="center" width="150px">|<img src="config/bspwm/rices/jan/walls/wall-02.webp" alt="Jan Rice" align="center" width="150px">|<img src="config/bspwm/rices/jan/walls/wall-03.webp" alt="Jan Rice" align="center" width="150px">|
 |:-:|:-:|:-:|
@@ -100,7 +98,7 @@ Increase and decrease transparency in focused or selected window.
 |---|---|
 
 <details>
-<summary><b>Extra wallpapers in Aline</b></summary>
+<summary><b>Extra wallpapers en Aline</b></summary>
 
 |<img src="config/bspwm/rices/aline/walls/wall-02.webp" alt="Aline Rice" align="center" width="150px">|<img src="config/bspwm/rices/aline/walls/wall-03.webp" alt="Aline Rice" align="center" width="150px">|<img src="config/bspwm/rices/aline/walls/wall-04.webp" alt="Aline Rice" align="center" width="150px">|
 |:-:|:-:|:-:|
@@ -114,7 +112,7 @@ Increase and decrease transparency in focused or selected window.
 |---|---|
 
 <details>
-<summary><b>Extra wallpapers in Andrea</b></summary>
+<summary><b>Extra wallpapers en Andrea</b></summary>
 
 |<img src="config/bspwm/rices/andrea/walls/wall-02.webp" alt="Andrea Rice" align="center" width="150px">|<img src="config/bspwm/rices/andrea/walls/wall-03.webp" alt="Andrea Rice" align="center" width="150px">|<img src="config/bspwm/rices/andrea/walls/wall-04.webp" alt="Andrea Rice" align="center" width="150px">|
 |:-:|:-:|:-:|
@@ -127,7 +125,7 @@ Increase and decrease transparency in focused or selected window.
 |---|---|
 
 <details>
-<summary><b>Extra wallpapers in Cynthia</b></summary>
+<summary><b>Extra wallpapers en Cynthia</b></summary>
 
 |<img src="config/bspwm/rices/cynthia/walls/wall-01.webp" alt="Cynthia Rice" align="center" width="150px">|<img src="config/bspwm/rices/cynthia/walls/wall-02.webp" alt="Cynthia Rice" align="center" width="150px">|<img src="config/bspwm/rices/cynthia/walls/wall-04.webp" alt="Cynthia Rice" align="center" width="150px">|
 |:-:|:-:|:-:|
@@ -141,7 +139,7 @@ Increase and decrease transparency in focused or selected window.
 |---|---|
 
 <details>
-<summary><b>Extra wallpapers in Isabel</b></summary>
+<summary><b>Extra wallpapers en Isabel</b></summary>
 
 |<img src="config/bspwm/rices/isabel/walls/wall-02.webp" alt="Isabel Rice" align="center" width="150px">|<img src="config/bspwm/rices/isabel/walls/wall-03.webp" alt="Isabel Rice" align="center" width="150px">|<img src="config/bspwm/rices/isabel/walls/wall-04.webp" alt="Isabel Rice" align="center" width="150px">|
 |:-:|:-:|:-:|
@@ -155,7 +153,7 @@ Increase and decrease transparency in focused or selected window.
 |---|---|
 
 <details>
-<summary><b>Extra wallpapers in Silvia</b></summary>
+<summary><b>Extra wallpapers en Silvia</b></summary>
 
 |<img src="config/bspwm/rices/silvia/walls/wall-01.webp" alt="Silvia Rice" align="center" width="150px">|<img src="config/bspwm/rices/silvia/walls/wall-03.webp" alt="Silvia Rice" align="center" width="150px">|<img src="config/bspwm/rices/silvia/walls/wall-04.webp" alt="Silvia Rice" align="center" width="150px">|
 |:-:|:-:|:-:|
@@ -169,7 +167,7 @@ Increase and decrease transparency in focused or selected window.
 |---|---|
 
 <details>
-<summary><b>Extra wallpapers in Melissa</b></summary>
+<summary><b>Extra wallpapers en Melissa</b></summary>
 
 |<img src="config/bspwm/rices/melissa/walls/wall-02.webp" alt="Melissa Rice" align="center" width="150px">|<img src="config/bspwm/rices/melissa/walls/wall-03.webp" alt="Melissa Rice" align="center" width="150px">|<img src="config/bspwm/rices/melissa/walls/wall-04.webp" alt="Melissa Rice" align="center" width="150px">|
 |:-:|:-:|:-:|
@@ -183,7 +181,7 @@ Increase and decrease transparency in focused or selected window.
 |---|---|
 
 <details>
-<summary><b>Extra wallpapers in Pamela</b></summary>
+<summary><b>Extra wallpapers en Pamela</b></summary>
 
 |<img src="config/bspwm/rices/pamela/walls/wall-02.webp" alt="Pamela Rice" align="center" width="150px">|<img src="config/bspwm/rices/pamela/walls/wall-03.webp" alt="Pamela Rice" align="center" width="150px">|<img src="config/bspwm/rices/pamela/walls/wall-04.webp" alt="Pamela Rice" align="center" width="150px">|
 |:-:|:-:|:-:|
@@ -196,7 +194,7 @@ Increase and decrease transparency in focused or selected window.
 |---|---|
 
 <details>
-<summary><b>Extra wallpapers in Cristina</b></summary>
+<summary><b>Extra wallpapers en Cristina</b></summary>
 
 |<img src="config/bspwm/rices/cristina/walls/wall-02.webp" alt="Cristina Rice" align="center" width="150px">|<img src="config/bspwm/rices/cristina/walls/wall-03.webp" alt="Cristina Rice" align="center" width="150px">|<img src="config/bspwm/rices/cristina/walls/wall-04.webp" alt="Cristina Rice" align="center" width="150px">|
 |:-:|:-:|:-:|
@@ -210,7 +208,7 @@ Increase and decrease transparency in focused or selected window.
 |---|---|
 
 <details>
-<summary><b>Extra wallpapers in Karla</b></summary>
+<summary><b>Extra wallpapers en Karla</b></summary>
 
 |<img src="config/bspwm/rices/karla/walls/wall-02.webp" alt="Karla Rice" align="center" width="150px">|<img src="config/bspwm/rices/karla/walls/wall-03.webp" alt="Karla Rice" align="center" width="150px">|<img src="config/bspwm/rices/karla/walls/wall-04.webp" alt="Karla Rice" align="center" width="150px">|
 |:-:|:-:|:-:|
@@ -224,7 +222,7 @@ Increase and decrease transparency in focused or selected window.
 |---|---|
 
 <details>
-<summary><b>Extra wallpapers in z0mbi3</b></summary>
+<summary><b>Extra wallpapers en z0mbi3</b></summary>
 
 |<img src="config/bspwm/rices/z0mbi3/walls/wall-01.webp" alt="z0mbi3 Rice" align="center" width="150px">|<img src="config/bspwm/rices/z0mbi3/walls/wall-02.webp" alt="z0mbi3 Rice" align="center" width="150px">|<img src="config/bspwm/rices/z0mbi3/walls/wall-03.webp" alt="z0mbi3 Rice" align="center" width="150px">|
 |:-:|:-:|:-:|
@@ -232,59 +230,59 @@ Increase and decrease transparency in focused or selected window.
 
 </details>
 
-## Neovim themes
-Actually the neovim theme is OneDark, but the background will adapt to the colorscheme in the rice you are. Now is configured in "lua". i wanna keepit simple so there are a few plugins.
+## Temas NEOVIM
+Actualmente el tema de neovim es OneDark, pero el fondo se adaptara a los colores del tema en el que estes. Esta configurado en Lua, con pocos plugins para mantenerlo simple, pero siempre puedes agregar los tuyos.
 - Lualine
 - Nvim-Tree
 - Colorizer
 - Devicons
 
-The plugin manager is Packer.
+El manejador de plugins es Packer.
 
 <img src="https://user-images.githubusercontent.com/67278339/221430203-23308e84-c974-4481-8c17-9aab53b37766.gif" alt="Neovim Themes" align="center" width="400px">
 
 ## Firefox Theme (z0mbi3 Fox)
 <img src="https://user-images.githubusercontent.com/67278339/228313955-670436db-d502-4249-9817-d67e3de86aa1.png" alt="Firefox theme - z0mbi3-Fox" width="700">
 
-## Very useful keybindigs to know...
+## Atajos de teclado utiles que deberias saber...
 
-- <code>alt + @space</code> Display menu to select theme selector.
-- <code>super + @space</code> Apps Menu.
-- <code>super + h </code> Hides bar/s <code>super + u</code> unhide bar/s
-- <code>super + Print</code> Takes screenshot.
-- <code>ctrl + alt {plus,minus,t}</code> Changes transparency on focused window.
-- <code>ctrl + super + alt + p</code> Power off computer. <code>ctrl + super + alt + r</code> Restart computer.
-- <code>super + Return</code> Open a terminal.
-- <code>super + Alt + Return</code> Open a floating terminal.
-- <code>ctrl + super + alt + k</code> Brute Kill a window/process.
-- <code>super + alt + w</code> Changes randomly wallpaper.
-- <code>super + alt + r</code> Restart bspwm.
+- <code>alt + @space</code> Abre el menu para seleccionar un nuevo tema.
+- <code>super + @space</code> Menu de apps.
+- <code>super + h </code> Esconde la barra <code>super + u</code> Muestra nuevamente la barra.
+- <code>super + Print</code> Toma captura de pantalla.
+- <code>ctrl + alt + plus</code> Incrementa la transparencia de la ventana. <code>ctrl + alt + minus</code> Decrementa la transparencia. <code>ctrl + alt + t</code> Reestablece la transparencia por default.
+- <code>ctrl + super + alt + p</code> Apaga la computadora. <code>ctrl + super + alt + r</code> Reinicia la computadora.
+- <code>super + Return</code> Abre una terminal.
+- <code>super + Alt + Return</code> Abre una terminal flotante.
+- <code>ctrl + super + alt + k</code> Mata un proceso o ventana.
+- <code>super + alt + w</code> Cambia al azar el wallpaper.
+- <code>super + alt + r</code> Reinicia bspwm.
 
-And more.. You need to look sxhkdrc file for more.
+Y mas... Necesitaras mirar el archivo sxhkdrc file para ver todos los atajos.
 
-## 📦 setup
+## 📦 El Setup
 
-### 💾 Installation:
-The installer only works for **ARCH** Linux, and based distros.
+### 💾 Instalacion:
+El instalador solo funciona con **ARCH** Linux, y derivadas.
 
-<b>Open a terminal in HOME</b>
-- **First download the installer**
+<b>Abre una terminal en tu HOME</b>
+- **Primero descarga el instalador**
 ```sh
 curl https://raw.githubusercontent.com/gh0stzk/dotfiles/master/RiceInstaller -o $HOME/RiceInstaller
 ```
-- **Now give it execute permissions**
+- **Ahora dale permisos de ejecucion**
 ```sh
 chmod +x RiceInstaller
 ```
-- **Finally run the installer**
+- **Finalmente ejecuta el instalador**
 ```sh
 ./RiceInstaller
 ```
 
-## Troubleshooting & Tips
+## Problemas y Tips
 
-See the [Wiki](https://github.com/gh0stzk/dotfiles/wiki)
+Mira la [Wiki](https://github.com/gh0stzk/dotfiles/wiki)
 
+## Creditos
 
-## Credits
 - [turquoise-hexagon](https://github.com/turquoise-hexagon/fonts), [adi1090x](https://github.com/adi1090x/widgets), [gabrielzschmitz](https://github.com/gabrielzschmitz), [elenapan](https://github.com/elenapan/dotfiles), [rxyhn](https://github.com/rxyhn/bspdots), [okklol](https://github.com/okklol/eww-bar), [ikz87](https://github.com/ikz87).

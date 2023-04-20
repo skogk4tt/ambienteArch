@@ -80,19 +80,15 @@ if not os.path.exists(os.path.expanduser("~/.local/share/fonts")):
 if not os.path.exists(os.path.expanduser("~/.local/share/asciiart")):
     os.makedirs(os.path.expanduser("~/.local/share/asciiart"))
 
-origen = os.path.expanduser("~/dotfiles/config/")
-destino = os.path.expanduser("~/.config/")
+ruta_archivos = os.path.expanduser('~/dotfiles/config/*')
 
-# Copiar archivos
-for archivo in os.listdir(origen):
-    ruta_archivo_origen = os.path.join(origen, archivo)
-    ruta_archivo_destino = os.path.join(destino, archivo)
+for archivo in glob.glob(ruta_archivos):
     try:
-        shutil.copytree(ruta_archivo_origen, ruta_archivo_destino)
-        print(f"{origen} Copiado")
+        shutil.copytree(archivo, os.path.expanduser('~/.config/'))
+        print(f"{archivo}")
         time.sleep(1)
     except Exception as e:
-        print(f"{origen} Fallido")
+        print(f"{archivo} {str(e)}")
         time.sleep(1)
 
 # Instalando paru y eww

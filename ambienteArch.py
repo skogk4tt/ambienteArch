@@ -40,7 +40,7 @@ def esta_instalada(paquete):
 print("Revisando dependencias")
 for paquete in dependencias:
     if not esta_instalada(paquete):
-        os.system(f"sudo pacman -S {paquete}")
+        os.system(f"sudo pacman -S {paquete} --noconfirm")
         print("")
     else:
         print(f"{paquete} ya existe en el sistema")

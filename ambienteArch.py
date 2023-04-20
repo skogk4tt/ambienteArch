@@ -1,6 +1,7 @@
 import os
 import subprocess
 import time
+import glob
 # Revisar si el usuario que ejecuta el script es root
 if os.geteuid() == 0:
     print("Este script NO debe ser ejecutado como usuario ROOT")

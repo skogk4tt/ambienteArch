@@ -89,10 +89,10 @@ for archivo in os.listdir(origen):
     ruta_archivo_destino = os.path.join(destino, archivo)
     try:
         shutil.copytree(ruta_archivo_origen, ruta_archivo_destino)
-        print("Copiado")
+        print(f"{origen} Copiado")
         time.sleep(1)
     except Exception as e:
-        print("Fallido")
+        print(f"{origen} Fallido")
         time.sleep(1)
 
 # Instalando paru y eww

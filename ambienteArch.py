@@ -92,6 +92,71 @@ for archivo in glob.glob(ruta_archivos):
         print(f"{archivo} {str(e)}")
         time.sleep(1)
 
+ruta_archivos = os.path.expanduser('~/dotfiles/misc/bin/*')
+
+for archivo in glob.glob(ruta_archivos):
+    try:
+        shutil.copytree(archivo, os.path.expanduser('~/.local/bin/'))
+        print(f"{archivo}")
+        time.sleep(1)
+    except Exception as e:
+        print(f"{archivo} {str(e)}")
+        time.sleep(1)
+
+ruta_archivos = os.path.expanduser('~/dotfiles/misc/applications/*')
+
+for archivo in glob.glob(ruta_archivos):
+    try:
+        shutil.copytree(archivo, os.path.expanduser('~/.local/share/applications/'))
+        print(f"{archivo}")
+        time.sleep(1)
+    except Exception as e:
+        print(f"{archivo} {str(e)}")
+        time.sleep(1)
+
+ruta_archivos = os.path.expanduser('~/dotfiles/misc/fonts/*')
+
+for archivo in glob.glob(ruta_archivos):
+    try:
+        shutil.copytree(archivo, os.path.expanduser('~/.local/share/fonts/'))
+        print(f"{archivo}")
+        time.sleep(1)
+    except Exception as e:
+        print(f"{archivo} {str(e)}")
+        time.sleep(1)
+
+ruta_archivos = os.path.expanduser('~/dotfiles/misc/asciiart/*')
+
+for archivo in glob.glob(ruta_archivos):
+    try:
+        shutil.copytree(archivo, os.path.expanduser('~/.local/share/asciiart/'))
+        print(f"{archivo}")
+        time.sleep(1)
+    except Exception as e:
+        print(f"{archivo} {str(e)}")
+        time.sleep(1)
+
+ruta_archivos = os.path.expanduser('~/dotfiles/misc/firefox/*')
+
+for archivo in glob.glob(ruta_archivos):
+    try:
+        shutil.copytree(archivo, os.path.expanduser('~/.mozilla/firefox/*.default-release/'))
+        print(f"{archivo}")
+        time.sleep(1)
+    except Exception as e:
+        print(f"{archivo} {str(e)}")
+        time.sleep(1)
+
+ruta_zshrc = os.path.join(os.path.expanduser('~'), 'dotfiles', 'home', '.zshrc')
+
+try:
+    shutil.copy2(ruta_zshrc, os.path.expanduser('~'))
+    os.system('fc-cache -rv >/dev/null 2>&1')
+    print("Files copied successfully!")
+    time.sleep(3)
+except Exception as e:
+    print(f"An error occurred while copying files: {str(e)}")
+
 # Instalando paru y eww
 if not os.system("command -v paru >/dev/null 2>&1"):
     print("Instalando paru")

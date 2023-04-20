@@ -70,92 +70,70 @@ os.system("clear")
 # Copiando archivos
 print("Copiando archivos a sus respectivos directorios")
 
-if not os.path.exists(os.path.expanduser("~/.config")):
-    os.makedirs(os.path.expanduser("~/.config"))
-if not os.path.exists(os.path.expanduser("~/.local/bin")):
-    os.makedirs(os.path.expanduser("~/.local/bin"))
-if not os.path.exists(os.path.expanduser("~/.local/share/applications")):
-    os.makedirs(os.path.expanduser("~/.local/share/applications"))
-if not os.path.exists(os.path.expanduser("~/.local/share/fonts")):
-    os.makedirs(os.path.expanduser("~/.local/share/fonts"))
-if not os.path.exists(os.path.expanduser("~/.local/share/asciiart")):
-    os.makedirs(os.path.expanduser("~/.local/share/asciiart"))
-
-ruta_archivos = os.path.expanduser('~/dotfiles/config/*')
-
-for archivo in glob.glob(ruta_archivos):
-    try:
-        shutil.copytree(archivo, os.path.expanduser('~/.config/'))
-        print(f"{archivo}")
-        time.sleep(1)
-    except Exception as e:
-        print(f"{archivo} {str(e)}")
-        time.sleep(1)
-
-ruta_archivos = os.path.expanduser('~/dotfiles/misc/bin/*')
-
-for archivo in glob.glob(ruta_archivos):
-    try:
-        shutil.copytree(archivo, os.path.expanduser('~/.local/bin/'))
-        print(f"{archivo}")
-        time.sleep(1)
-    except Exception as e:
-        print(f"{archivo} {str(e)}")
-        time.sleep(1)
-
-ruta_archivos = os.path.expanduser('~/dotfiles/misc/applications/*')
-
-for archivo in glob.glob(ruta_archivos):
-    try:
-        shutil.copytree(archivo, os.path.expanduser('~/.local/share/applications/'))
-        print(f"{archivo}")
-        time.sleep(1)
-    except Exception as e:
-        print(f"{archivo} {str(e)}")
-        time.sleep(1)
-
-ruta_archivos = os.path.expanduser('~/dotfiles/misc/fonts/*')
-
-for archivo in glob.glob(ruta_archivos):
-    try:
-        shutil.copytree(archivo, os.path.expanduser('~/.local/share/fonts/'))
-        print(f"{archivo}")
-        time.sleep(1)
-    except Exception as e:
-        print(f"{archivo} {str(e)}")
-        time.sleep(1)
-
-ruta_archivos = os.path.expanduser('~/dotfiles/misc/asciiart/*')
-
-for archivo in glob.glob(ruta_archivos):
-    try:
-        shutil.copytree(archivo, os.path.expanduser('~/.local/share/asciiart/'))
-        print(f"{archivo}")
-        time.sleep(1)
-    except Exception as e:
-        print(f"{archivo} {str(e)}")
-        time.sleep(1)
-
-ruta_archivos = os.path.expanduser('~/dotfiles/misc/firefox/*')
-
-for archivo in glob.glob(ruta_archivos):
-    try:
-        shutil.copytree(archivo, os.path.expanduser('~/.mozilla/firefox/*.default-release/'))
-        print(f"{archivo}")
-        time.sleep(1)
-    except Exception as e:
-        print(f"{archivo} {str(e)}")
-        time.sleep(1)
-
-ruta_zshrc = os.path.join(os.path.expanduser('~'), 'dotfiles', 'home', '.zshrc')
+source_folder = os.path.expanduser('~/dotfiles/config/')
+target_folder = os.path.expanduser('~/.config/')
 
 try:
-    shutil.copy2(ruta_zshrc, os.path.expanduser('~'))
-    os.system('fc-cache -rv >/dev/null 2>&1')
-    print("Files copied successfully!")
-    time.sleep(3)
+    shutil.copytree(source_folder, target_folder, dirs_exist_ok=True)
+    time.sleep(1)
 except Exception as e:
-    print(f"An error occurred while copying files: {str(e)}")
+    print(f"Error copying files: {str(e)}")
+    time.sleep(1)
+
+source_folder = os.path.expanduser('~/dotfiles/misc/bin/')
+target_folder = os.path.expanduser('~/.local/bin/')
+
+try:
+    shutil.copytree(source_folder, target_folder, dirs_exist_ok=True)
+    time.sleep(1)
+except Exception as e:
+    print(f"Error copying files: {str(e)}")
+    time.sleep(1)
+
+source_folder = os.path.expanduser('~/dotfiles/misc/applications/')
+target_folder = os.path.expanduser('~/.local/share/applications/')
+
+try:
+    shutil.copytree(source_folder, target_folder, dirs_exist_ok=True)
+    time.sleep(1)
+except Exception as e:
+    print(f"Error copying files: {str(e)}")
+    time.sleep(1)
+
+source_folder = os.path.expanduser('~/dotfiles/misc/fonts/')
+target_folder = os.path.expanduser('~/.local/share/fonts/')
+
+try:
+    shutil.copytree(source_folder, target_folder, dirs_exist_ok=True)
+    time.sleep(1)
+except Exception as e:
+    print(f"Error copying files: {str(e)}")
+    time.sleep(1)
+
+source_folder = os.path.expanduser('~/dotfiles/misc/asciiart/')
+target_folder = os.path.expanduser('~/.local/share/asciiart/')
+
+try:
+    shutil.copytree(source_folder, target_folder, dirs_exist_ok=True)
+    time.sleep(1)
+except Exception as e:
+    print(f"Error copying files: {str(e)}")
+    time.sleep(1)
+
+source_folder = os.path.expanduser('~/dotfiles/misc/firefox/')
+target_folder = os.path.expanduser('~/.mozilla/firefox/*.default-release/')
+
+try:
+    shutil.copytree(source_folder, target_folder, dirs_exist_ok=True)
+    time.sleep(1)
+except Exception as e:
+    print(f"Error copying files: {str(e)}")
+    time.sleep(1)
+
+os.system("cp -f $HOME/dotfiles/home/.zshrc $HOME")
+os.system("fc-cache -rv >/dev/null 2>&1")
+print("Files copied successfully!!")
+time.sleep(3)
 
 # Instalando paru y eww
 if not os.system("command -v paru >/dev/null 2>&1"):

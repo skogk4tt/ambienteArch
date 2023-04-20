@@ -80,78 +80,20 @@ if not os.path.exists(os.path.expanduser("~/.local/share/fonts")):
 if not os.path.exists(os.path.expanduser("~/.local/share/asciiart")):
     os.makedirs(os.path.expanduser("~/.local/share/asciiart"))
 
-home_dir = os.path.expanduser("~/dotfiles/")
+origen = os.path.expanduser("~/dotfiles/config/")
+destino = os.path.expanduser("~/.config/")
 
-for root, dirs, files in os.walk(home_dir + "config/"):
-    for archivo in files:
-        archivo_path = os.path.join(root, archivo)
-        try:
-            shutil.copy(archivo_path, os.path.expanduser("~/.config/"))
-            print(f"{archivo_path} copiado")
-            time.sleep(1)
-        except shutil.Error:
-            print(f"{archivo_path} fallido")
-            time.sleep(1)
-
-for root, dirs, files in os.walk(home_dir + "misc/bin/"):
-    for archivo in files:
-        archivo_path = os.path.join(root, archivo)
-        try:
-            shutil.copy(archivo_path, os.path.expanduser("~/.local/bin/"))
-            print(f"{archivo_path} copiado")
-            time.sleep(1)
-        except shutil.Error:
-            print(f"{archivo_path} fallido")
-            time.sleep(1)
-    
-for root, dirs, files in os.walk(home_dir + "misc/applications/"):
-    for archivo in files:
-        archivo_path = os.path.join(root, archivo)
-        try:
-            shutil.copy(archivo_path, os.path.expanduser("~/.local/share/applications/"))
-            print(f"{archivo_path} copiado")
-            time.sleep(1)
-        except shutil.Error:
-            print(f"{archivo_path} fallido")
-            time.sleep(1)
-    
-for root, dirs, files in os.walk(home_dir + "misc/fonts/"):
-    for archivo in files:
-        archivo_path = os.path.join(root, archivo)
-        try:
-            shutil.copy(archivo_path, os.path.expanduser("~/.local/share/fonts/"))
-            print(f"{archivo_path} copiado")
-            time.sleep(1)
-        except shutil.Error:
-            print(f"{archivo_path} fallido")
-            time.sleep(1)
-    
-for root, dirs, files in os.walk(home_dir + "misc/asciiart/"):
-    for archivo in files:
-        archivo_path = os.path.join(root, archivo)
-        try:
-            shutil.copy(archivo_path, os.path.expanduser("~/.local/share/asciiart/"))
-            print(f"{archivo_path} file copiado")
-            time.sleep(1)
-        except shutil.Error:
-            print(f"{archivo_path} fallido")
-            time.sleep(1)
-
-for root, dirs, files in os.walk(home_dir + "misc/firefox/"):
-    for archivo in files:
-        archivo_path = os.path.join(root, archivo)
-        try:
-            shutil.copy(archivo_path, os.path.expanduser("~/.mozilla/firefox/*.default-release/"))
-            print(f"{archivo_path} file copiado")
-            time.sleep(1)
-        except shutil.Error:
-            print(f"{archivo_path} fallido")
-            time.sleep(1)
-
-os.system("cp -f $HOME/dotfiles/home/.zshrc $HOME")
-os.system("fc-cache -rv >/dev/null 2>&1")
-print(f"{BLD}{CGR}Files copied successfully!!{CNC}")
-time.sleep(3)
+# Copiar archivos
+for archivo in os.listdir(origen):
+    ruta_archivo_origen = os.path.join(origen, archivo)
+    ruta_archivo_destino = os.path.join(destino, archivo)
+    try:
+        shutil.copytree(ruta_archivo_origen, ruta_archivo_destino)
+        print("Copiado")
+        time.sleep(1)
+    except Exception as e:
+        print("Fallido")
+        time.sleep(1)
 
 # Instalando paru y eww
 if not os.system("command -v paru >/dev/null 2>&1"):

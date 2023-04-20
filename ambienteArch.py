@@ -75,6 +75,7 @@ target_folder = os.path.expanduser('~/.config/')
 
 try:
     shutil.copytree(source_folder, target_folder, dirs_exist_ok=True)
+    print(f"{source_folder} Copiado")
     time.sleep(1)
 except Exception as e:
     print(f"Error copying files: {str(e)}")
@@ -85,6 +86,7 @@ target_folder = os.path.expanduser('~/.local/bin/')
 
 try:
     shutil.copytree(source_folder, target_folder, dirs_exist_ok=True)
+    print(f"{source_folder} Copiado")
     time.sleep(1)
 except Exception as e:
     print(f"Error copying files: {str(e)}")
@@ -95,6 +97,7 @@ target_folder = os.path.expanduser('~/.local/share/applications/')
 
 try:
     shutil.copytree(source_folder, target_folder, dirs_exist_ok=True)
+    print(f"{source_folder} Copiado")
     time.sleep(1)
 except Exception as e:
     print(f"Error copying files: {str(e)}")
@@ -105,6 +108,7 @@ target_folder = os.path.expanduser('~/.local/share/fonts/')
 
 try:
     shutil.copytree(source_folder, target_folder, dirs_exist_ok=True)
+    print(f"{source_folder} Copiado")
     time.sleep(1)
 except Exception as e:
     print(f"Error copying files: {str(e)}")
@@ -115,6 +119,7 @@ target_folder = os.path.expanduser('~/.local/share/asciiart/')
 
 try:
     shutil.copytree(source_folder, target_folder, dirs_exist_ok=True)
+    print(f"{source_folder} Copiado")
     time.sleep(1)
 except Exception as e:
     print(f"Error copying files: {str(e)}")
@@ -125,6 +130,7 @@ target_folder = os.path.expanduser('~/.mozilla/firefox/*.default-release/')
 
 try:
     shutil.copytree(source_folder, target_folder, dirs_exist_ok=True)
+    print(f"{source_folder} Copiado")
     time.sleep(1)
 except Exception as e:
     print(f"Error copying files: {str(e)}")
